@@ -94,33 +94,118 @@
                                 </div>
                             </div>
 
-<!-- Procedimento -->
+                            <!-- Critérios Laboratoriais e Clínicos Base -->
                             <div class="mb-3">
-                                <label class="form-label">Critérios Laboratoriais e Clinicos Base </label>
-                                <div class="accordion" id="accordionCirurgia">
+                                <label class="form-label">Critérios Laboratoriais e Clínicos Base</label>
+                                <div class="accordion" id="accordionCriterios">
+                                    <!-- Albumina -->
                                     <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingCirurgia">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCirurgia" aria-expanded="false" aria-controls="collapseCirurgia">
-                                                <i class="fa-solid fa-briefcase-medical me-2"></i> Albumina(0-3 pontos)
+                                        <h2 class="accordion-header" id="headingAlbumina">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlbumina" aria-expanded="false" aria-controls="collapseAlbumina">
+                                                <i class="fa-solid fa-vial me-2"></i> Albumina (0-3 pontos)
                                             </button>
                                         </h2>
-                                        <div id="collapseCirurgia" class="accordion-collapse collapse" aria-labelledby="headingCirurgia" data-bs-parent="#accordionCirurgia">
+                                        <div id="collapseAlbumina" class="accordion-collapse collapse" aria-labelledby="headingAlbumina" data-bs-parent="#accordionCriterios">
                                             <div class="accordion-body">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="cirurgiaRadio" id="cirurgia1" value="debridamento" required>
-                                                    <label class="form-check-label" for="cirurgia1">3 pontos: > 3,5g/dL</label>
+                                                    <input class="form-check-input" type="radio" name="albuminaRadio" id="albumina3" value="3" required>
+                                                    <label class="form-check-label" for="albumina3">3 pontos: > 3,5g/dL</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="cirurgiaRadio" id="cirurgia2" value="retalho">
-                                                    <label class="form-check-label" for="cirurgia2">2 pontos: 3,0-3,5 g/dL</label>
+                                                    <input class="form-check-input" type="radio" name="albuminaRadio" id="albumina2" value="2">
+                                                    <label class="form-check-label" for="albumina2">2 pontos: 3,0-3,5 g/dL</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="cirurgiaRadio" id="cirurgia1" value="debridamento" required>
-                                                    <label class="form-check-label" for="cirurgia1">1 pontos:  2,5-2,9g/dL</label>
+                                                    <input class="form-check-input" type="radio" name="albuminaRadio" id="albumina1" value="1">
+                                                    <label class="form-check-label" for="albumina1">1 ponto: 2,5-2,9g/dL</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="cirurgiaRadio" id="cirurgia2" value="retalho">
-                                                    <label class="form-check-label" for="cirurgia2">0 pontos: < 2,5 g/dL</label>
+                                                    <input class="form-check-input" type="radio" name="albuminaRadio" id="albumina0" value="0">
+                                                    <label class="form-check-label" for="albumina0">0 pontos: < 2,5 g/dL</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Hemoglobina -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingHemoglobina">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHemoglobina" aria-expanded="false" aria-controls="collapseHemoglobina">
+                                                <i class="fa-solid fa-droplet me-2"></i> Hemoglobina (0-3 pontos)
+                                            </button>
+                                        </h2>
+                                        <div id="collapseHemoglobina" class="accordion-collapse collapse" aria-labelledby="headingHemoglobina" data-bs-parent="#accordionCriterios">
+                                            <div class="accordion-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="hemoglobinaRadio" id="hemoglobina3" value="3" required>
+                                                    <label class="form-check-label" for="hemoglobina3">3 pontos: Critério a definir</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="hemoglobinaRadio" id="hemoglobina2" value="2">
+                                                    <label class="form-check-label" for="hemoglobina2">2 pontos: Critério a definir</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="hemoglobinaRadio" id="hemoglobina1" value="1">
+                                                    <label class="form-check-label" for="hemoglobina1">1 ponto: Critério a definir</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="hemoglobinaRadio" id="hemoglobina0" value="0">
+                                                    <label class="form-check-label" for="hemoglobina0">0 pontos: Critério a definir</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Alta para casa -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingAlta">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAlta" aria-expanded="false" aria-controls="collapseAlta">
+                                                <i class="fa-solid fa-house-medical me-2"></i> Alta para casa (0-3 pontos)
+                                            </button>
+                                        </h2>
+                                        <div id="collapseAlta" class="accordion-collapse collapse" aria-labelledby="headingAlta" data-bs-parent="#accordionCriterios">
+                                            <div class="accordion-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="altaRadio" id="alta3" value="3" required>
+                                                    <label class="form-check-label" for="alta3">3 pontos: Critério a definir</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="altaRadio" id="alta2" value="2">
+                                                    <label class="form-check-label" for="alta2">2 pontos: Critério a definir</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="altaRadio" id="alta1" value="1">
+                                                    <label class="form-check-label" for="alta1">1 ponto: Critério a definir</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="altaRadio" id="alta0" value="0">
+                                                    <label class="form-check-label" for="alta0">0 pontos: Critério a definir</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Infecção -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingInfeccao">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfeccao" aria-expanded="false" aria-controls="collapseInfeccao">
+                                                <i class="fa-solid fa-bacterium me-2"></i> Infecção (0-3 pontos)
+                                            </button>
+                                        </h2>
+                                        <div id="collapseInfeccao" class="accordion-collapse collapse" aria-labelledby="headingInfeccao" data-bs-parent="#accordionCriterios">
+                                            <div class="accordion-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="infeccaoRadio" id="infeccao3" value="3" required>
+                                                    <label class="form-check-label" for="infeccao3">3 pontos: Critério a definir</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="infeccaoRadio" id="infeccao2" value="2">
+                                                    <label class="form-check-label" for="infeccao2">2 pontos: Critério a definir</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="infeccaoRadio" id="infeccao1" value="1">
+                                                    <label class="form-check-label" for="infeccao1">1 ponto: Critério a definir</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="infeccaoRadio" id="infeccao0" value="0">
+                                                    <label class="form-check-label" for="infeccao0">0 pontos: Critério a definir</label>
                                                 </div>
                                             </div>
                                         </div>
