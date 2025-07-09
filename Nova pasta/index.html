@@ -70,65 +70,12 @@
                             </div>
                             <!-- Procedimento -->
                             <div class="mb-3">
-                                <label class="form-label">Qual a Cirurgia indicada</label>
-                                <div class="accordion" id="accordionCirurgia">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingCirurgia">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCirurgia" aria-expanded="false" aria-controls="collapseCirurgia">
-                                                <i class="fa-solid fa-briefcase-medical me-2"></i> Selecione a Cirurgia
-                                            </button>
-                                        </h2>
-                                        <div id="collapseCirurgia" class="accordion-collapse collapse" aria-labelledby="headingCirurgia" data-bs-parent="#accordionCirurgia">
-                                            <div class="accordion-body">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="cirurgiaRadio" id="cirurgia1" value="debridamento" required>
-                                                    <label class="form-check-label" for="cirurgia1">Debridamento</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="cirurgiaRadio" id="cirurgia2" value="retalho">
-                                                    <label class="form-check-label" for="cirurgia2">Retalho</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <label for="procedimento" class="form-label">Qual a Cirurgia indicada</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-briefcase-medical"></i></span>
+                                    <input type="text" class="form-control" id="procedimento" placeholder="Ex: Apendicectomia" required>
                                 </div>
                             </div>
-
-<!-- Procedimento -->
-                            <div class="mb-3">
-                                <label class="form-label">Critérios Laboratoriais e Clinicos Base </label>
-                                <div class="accordion" id="accordionCirurgia">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingCirurgia">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCirurgia" aria-expanded="false" aria-controls="collapseCirurgia">
-                                                <i class="fa-solid fa-briefcase-medical me-2"></i> Albumina(0-3 pontos)
-                                            </button>
-                                        </h2>
-                                        <div id="collapseCirurgia" class="accordion-collapse collapse" aria-labelledby="headingCirurgia" data-bs-parent="#accordionCirurgia">
-                                            <div class="accordion-body">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="cirurgiaRadio" id="cirurgia1" value="debridamento" required>
-                                                    <label class="form-check-label" for="cirurgia1">3 pontos: > 3,5g/dL</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="cirurgiaRadio" id="cirurgia2" value="retalho">
-                                                    <label class="form-check-label" for="cirurgia2">2 pontos: 3,0-3,5 g/dL</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="cirurgiaRadio" id="cirurgia1" value="debridamento" required>
-                                                    <label class="form-check-label" for="cirurgia1">1 pontos:  2,5-2,9g/dL</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="cirurgiaRadio" id="cirurgia2" value="retalho">
-                                                    <label class="form-check-label" for="cirurgia2">0 pontos: < 2,5 g/dL</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
                             <!-- Observações -->
                             <div class="mb-3">
                                 <label for="observacoes" class="form-label">Observações Clínicas</label>
